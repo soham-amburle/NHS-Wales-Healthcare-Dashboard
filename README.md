@@ -16,6 +16,7 @@ The dashboards use a **synthetic dataset** of 50,000 patient records based on NH
 ---
 
 ## Repository Structure
+
 NHS-Wales-Healthcare-Dashboard/
 │
 ├── data/                             # Synthetic datasets (CSV/Excel)
