@@ -23,15 +23,17 @@ NHS-Wales-Healthcare-Dashboard/
 ├── data/                             # Synthetic datasets (CSV/Excel)
 │   └── nhs_wales_synthetic.csv
 │
-├── Dashboard_1_AE_Performance/       # Dashboard 1: A&E Performance
-│   │
-├── Dashboard_2_Outpatients_RTT/      # Dashboard 2: Outpatient & RTT
+├── Dashboard_1_Executive_Summary/       # Dashboard 1: Exec Summary
+│  
+├── Dashboard_2_AE_Performance/       # Dashboard 1: A&E Performance
+│  
+├── Dashboard_3_Outpatients_RTT/      # Dashboard 2: Outpatient & RTT
 │   
-├── Dashboard_3_Inpatient_Flow/       # Dashboard 3: Inpatient Flow
+├── Dashboard_4_Inpatient_Flow/       # Dashboard 3: Inpatient Flow
 │
-├── Dashboard_4_Quality_Safety/       # Dashboard 4: Quality & Safety
+├── Dashboard_5_Quality_Safety/       # Dashboard 4: Quality & Safety
 │
-├── Dashboard_5_Population_Finance/  # Dashboard 5: Population Health & Finance
+├── Dashboard_6_Population_Finance/  # Dashboard 5: Population Health & Finance
 │
 ├── dashboards/                       # Master Power BI files
 │   └── NHS_Wales_Dashboard.pbix
