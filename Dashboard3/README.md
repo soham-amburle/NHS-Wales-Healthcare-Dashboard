@@ -24,13 +24,14 @@ These KPIs provide a quick overview of RTT performance and patient load:
 - **Patients Waiting >52 Weeks** – patients waiting beyond 52 weeks  
 - **Patients Treated** – total number of patients who have received treatment  
 - **Average Waiting Days** – mean waiting time for patients in the pathway  
-- **Longest Wait** – maximum waiting time recorded  
 
 ---
 
 ### **2. Gauges**
 
-- **Patients Treated Within 26 Weeks** – compliance with the NHS RTT 26-week target  
+- **Patients Treated Within 26 Weeks** – compliance with the NHS RTT 26-week target
+- **Longest Wait** – maximum waiting time recorded  
+
 
 ---
 
