@@ -1,72 +1,67 @@
-# NHS Wales – Dashboard 3: Outpatients & Elective Pathway (Referral to Treatment, RTT)  
+# NHS Wales – Dashboard 3: Outpatients & Elective Pathway (Referral to Treatment, RTT)
 ### README Documentation  
-**Created by: Soham S. Amburle**  
-**Date: 19 November 2025**  
+**Created by:** Soham S. Amburle  
+**Date:** 19 November 2025
 
 ---
 
 ## 📘 Overview
-The **Outpatients & Elective Pathway (RTT) Dashboard** provides a detailed analysis of patient flow through **NHS Wales elective and outpatient services**.  
-Built in **Power BI** using a synthetic dataset, this dashboard highlights key performance indicators including referral volumes, waiting times, treatment compliance, and pathway bottlenecks.
+The **Outpatients & Elective Pathway Dashboard** provides a detailed analysis of patient flow through the **Referral to Treatment (RTT)** pathway across **NHS Wales**.  
+Built in **Power BI** using a synthetic dataset, this dashboard highlights key metrics such as total referrals, waiting times, compliance with RTT targets, and specialty-level backlog analysis.
 
-The dashboard helps stakeholders understand waiting list pressures, track RTT compliance (26-week standard), and monitor delays across specialties and health boards.  
-Interactive filters allow users to explore the data by specialty, admission type, and time period.
+The dashboard is designed to support healthcare managers and decision makers by visualizing bottlenecks, monitoring performance, and identifying priority areas for intervention.  
+Interactive filters and slicers allow users to explore data by specialty, pathway stage, and patient characteristics.
 
 ---
 
 ## 📊 Dashboard Components
 
 ### **1. Cards (KPI Indicators)**
-These KPIs provide a quick overview of RTT performance and patient load:
+These cards provide an instant snapshot of pathway performance:
 
-- **Total Referrals** – total number of outpatient and elective referrals  
-- **Patients Waiting >26 Weeks** – backlog of patients exceeding 26-week RTT target  
-- **Patients Waiting >52 Weeks** – patients waiting beyond 52 weeks  
-- **Patients Treated** – total number of patients who have received treatment  
-- **Average Waiting Days** – mean waiting time for patients in the pathway  
+- **Total Referrals** – total number of patients referred into outpatient or elective pathways  
+- **Patients Waiting >26 Weeks** – number of patients exceeding the 26-week RTT target  
+- **Patients Waiting >52 Weeks** – number of patients exceeding the 52-week threshold  
+- **Patients Treated Within 26 Weeks (Gauge)** – percentage of patients treated on time  
 
----
-
-### **2. Gauges**
-
-- **Patients Treated Within 26 Weeks** – compliance with the NHS RTT 26-week target
-- **Longest Wait** – maximum waiting time recorded  
-
+- **Total Patients Treated** – count of completed treatments  
+- **Average Waiting Days** – average days between referral and treatment  
+- **Longest Wait (Gauge)** – maximum waiting time recorded  
 
 ---
 
-### **3. Slicers (Interactive Filters)**
+### **2. Slicer (Interactive Filter)**
 
-- **Specialty**  
-- **Admission Type**  
-- **Referral Date**  
-- **Local Health Board**
-
-These slicers enable detailed analysis by clinical specialty, patient pathway type, and geography.
+- **Specialty** – allows users to filter visuals by clinical specialty (e.g., Orthopaedics, Ophthalmology, ENT, etc.)
 
 ---
 
-### **4. Clustered Bar Chart: Average Waiting Days by Specialty**
-Displays the mean waiting time per specialty, helping identify areas with prolonged RTT delays.
+### **3. Charts / Visualizations**
+
+- **Average Waiting Days by Specialty (Clustered Bar Chart)**  
+  Compares the mean waiting days across specialties to identify slower pathways and bottlenecks.
+
+- **Patients by Waiting Time Band (Stacked Column Chart)**  
+  Shows the distribution of patients across RTT waiting time bands (0–26 weeks, 26–52 weeks, 52–104 weeks, 104+ weeks) per specialty.
+
+- **Referral to Treatment Funnel**  
+  Visualizes patient flow from referral → waiting → treatment, highlighting drop-offs and delays in the pathway.
 
 ---
 
-### **5. Stacked Column Chart: Patients by Waiting Time Band**
-Shows patient counts grouped into waiting time categories (0–26 weeks, 26–52 weeks, 52–104 weeks, 104+ weeks), highlighting the distribution of long waits across specialties.
+## 📌 Dashboard Story & Navigation
+This dashboard tells a clear story about outpatient and elective pathway performance:
 
----
+1. **Start with the top-level KPIs** (Total Referrals, Patients Waiting >26/52 Weeks, Patients Treated Within 26 Weeks) to understand demand and backlog.  
+2. **Use the Specialty slicer** to focus on particular clinical areas.  
+3. **Analyze efficiency and bottlenecks** with Average Waiting Days and Longest Wait.  
+4. **Compare specialties** using the clustered bar chart and stacked column chart to prioritize resource allocation.  
+5. **Follow the Referral to Treatment Funnel** to see how patients progress through the pathway and where delays occur.
 
-### **6. Referral-to-Treatment Funnel**
-Visualizes patient flow through the elective pathway: **Referral → Waiting → Treatment**, highlighting where delays or bottlenecks occur.
-
----
-
-## 📌 Summary
-The Outpatients & Elective Pathway Dashboard delivers a **comprehensive and interactive view of RTT performance** across NHS Wales.  
-It allows healthcare leaders and analysts to **monitor compliance with waiting time standards, identify specialty-specific backlogs, and prioritize pathway improvement initiatives**.
+This structure supports decision makers in identifying high-priority specialties, monitoring RTT compliance, and targeting interventions to reduce delays.
 
 ---
 
 ## 👤 Author
 **Created by:** Soham S. Amburle  
-**Date:** 19 November 2025  
+**Date:** 19 November 2025
