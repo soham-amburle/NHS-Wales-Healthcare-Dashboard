@@ -1,84 +1,110 @@
-# NHS Wales Healthcare Dashboard
-17 November, 2025 - Present
+<readme>
+  <title>NHS Wales Healthcare Dashboard</title>
+  <date>17 November, 2025 – Present</date>
 
-## Project Overview
-This project contains interactive **Power BI dashboards** analyzing NHS Wales healthcare data. The dashboards focus on key performance areas including:
+  <section id="overview">
+    <header>Project Overview</header>
+    <paragraph>
+      This project contains a suite of interactive Power BI dashboards analyzing NHS Wales healthcare data across key operational, clinical, and population health domains. It uses a synthetic dataset of 50,000 patient records modeled on NHS Wales service activity.
+    </paragraph>
 
-- **A&E Performance** (attendances, wait times, 4-hour compliance, ambulance response)  
-- **Outpatient & RTT** (waiting times, elective care, referral-to-treatment targets)  
-- **Inpatient Flow** (bed occupancy, length of stay, discharge trends)  
-- **Quality & Safety** (infection rates, readmissions, mortality)  
-- **Population Health** (demographics, comorbidities, vaccination uptake)  
-- **Finance & Workforce** (costs, agency staffing)
+    <dashboardPages>
+      <page number="1">Executive Summary – High-level KPIs and system overview</page>
+      <page number="2">A&amp;E Performance – Emergency care flow, wait times, 4-hour compliance</page>
+      <page number="3">Outpatient &amp; RTT – Waiting lists, elective performance, RTT metrics</page>
+      <page number="4">Inpatient Flow – Bed occupancy, LOS, discharges, bottlenecks</page>
+      <page number="5">Quality &amp; Safety – Mortality, readmissions, infections, safety indicators</page>
+      <page number="6">Population Health – Demographics and patient characteristics</page>
+      <page number="7">Finance &amp; Workforce – Costs, staffing, agency usage</page>
+      <page number="8">Patient Drill-through – Individual patient journey exploration</page>
+    </dashboardPages>
+  </section>
 
-The dashboards use a **synthetic dataset** of 50,000 patient records based on NHS Wales service data, suitable for testing and analysis purposes.
+  <section id="repository-structure">
+    <header>Repository Structure</header>
+    <structure>
+      <folder name="data">
+        <file>nhs_wales_synthetic.csv</file>
+      </folder>
 
----
+      <folder name="Dashboard_1_Executive_Summary"/>
+      <folder name="Dashboard_2_AE_Performance"/>
+      <folder name="Dashboard_3_Outpatients_RTT"/>
+      <folder name="Dashboard_4_Inpatient_Flow"/>
+      <folder name="Dashboard_5_Quality_Safety"/>
+      <folder name="Dashboard_6_Population_Health"/>
+      <folder name="Dashboard_7_Finance_Workforce"/>
+      <folder name="Dashboard_8_Patient_Drillthrough"/>
 
-## Repository Structure
+      <folder name="dashboards">
+        <file>NHS_Wales_Dashboard.pbix</file>
+      </folder>
 
-```text
-NHS-Wales-Healthcare-Dashboard/
-│
-├── data/                             # Synthetic datasets (CSV/Excel)
-│   └── nhs_wales_synthetic.csv
-│
-├── Dashboard_1_Executive_Summary/       # Dashboard 1: Exec Summary
-│  
-├── Dashboard_2_AE_Performance/       # Dashboard 1: A&E Performance
-│  
-├── Dashboard_3_Outpatients_RTT/      # Dashboard 2: Outpatient & RTT
-│   
-├── Dashboard_4_Inpatient_Flow/       # Dashboard 3: Inpatient Flow
-│
-├── Dashboard_5_Quality_Safety/       # Dashboard 4: Quality & Safety
-│
-├── Dashboard_6_Population_Finance/  # Dashboard 5: Population Health & Finance
-│
-├── dashboards/                       # Master Power BI files
-│   └── NHS_Wales_Dashboard.pbix
-│
-└── README.md                         # Project overview, instructions, and repo info
-```
----
+      <file name="README.md"/>
+    </structure>
+  </section>
 
-## Key Features
+  <section id="features">
+    <header>Key Features</header>
+    <feature>Interactive slicers for date, age, sex, health board, and specialty</feature>
+    <feature>Executive KPI cards across domains</feature>
+    <feature>Flow and trend visualizations</feature>
+    <feature>Quality &amp; safety monitoring views</feature>
+    <feature>Population segmentation and demographic analysis</feature>
+    <feature>Patient-level drill-through exploration</feature>
+    <feature>Conditional formatting aligned with NHS Wales targets</feature>
+  </section>
 
-- **Interactive Slicers:** Filter by date, age, gender, local health board, and specialty.  
-- **KPIs & Cards:** Total attendances, average wait times, % seen within 4 hours, ambulance callouts, conversion rates.  
-- **Line Charts & Trends:** Track A&E attendances and ambulance response times over time.  
-- **Histograms:** Distribution of A&E wait times to identify bottlenecks.  
-- **Tooltips & Drill-through:** Hover details for patient demographics and care metrics.  
-- **Conditional Formatting:** Visual cues for KPIs to highlight performance against targets.
+  <section id="dataset">
+    <header>Dataset</header>
+    <file>nhs_wales_synthetic.csv</file>
+    <recordCount>50000</recordCount>
 
----
+    <fields>
+      <category name="Demographics">
+        <field>Age</field>
+        <field>Sex</field>
+        <field>WIMD quintile</field>
+      </category>
 
-## Dataset
+      <category name="Activity">
+        <field>Referral dates</field>
+        <field>Attendance type</field>
+        <field>Specialty</field>
+      </category>
 
-- **File:** `nhs_wales_synthetic.csv`  
-- **Records:** 50,000 synthetic patient encounters  
-- **Columns Include:**  
-  - Patient demographics (age, sex, WIMD quintile)  
-  - Admission details (type, specialty, event/referral dates, length of stay)  
-  - Clinical outcomes (mortality, readmissions, infections, comorbidities)  
-  - Operational metrics (A&E wait minutes, ambulance callouts/response, bed occupancy)  
-  - Finance & staffing (cost of care, agency staff usage)  
+      <category name="Operational metrics">
+        <field>A&amp;E wait times</field>
+        <field>Bed occupancy</field>
+        <field>Length of stay</field>
+      </category>
 
-> Note: This dataset is **synthetic** and does not contain real patient data. It is intended for **dashboard testing and analysis practice**.
+      <category name="Clinical outcomes">
+        <field>Mortality</field>
+        <field>Readmissions</field>
+        <field>Infections</field>
+        <field>Comorbidities</field>
+      </category>
 
----
+      <category name="Finance &amp; workforce">
+        <field>Cost of care</field>
+        <field>Agency staffing usage</field>
+      </category>
+    </fields>
 
-## How to Use
+    <note>
+      This dataset is synthetic and does not contain real patient information.
+    </note>
+  </section>
 
-1. Open `NHS_Wales_Dashboard.pbix` in **Power BI Desktop**.  
-2. Load the synthetic dataset from `data/nhs_wales_synthetic.csv`.  
-3. Use slicers to filter by date, demographics, or health board.  
-4. Explore KPIs, charts, and interactive visuals on each dashboard page:  
-   - **A&E Performance**  
-   - **Outpatient & RTT**  
-   - **Inpatient Flow**  
-   - **Quality & Safety**  
-   - **Population Health**  
-   - **Finance & Workforce**  
-
----
+  <section id="usage">
+    <header>How to Use</header>
+    <steps>
+      <step>Open the file NHS_Wales_Dashboard.pbix in Power BI Desktop.</step>
+      <step>Ensure the dataset is located in the /data folder.</step>
+      <step>Refresh data connections to load nhs_wales_synthetic.csv.</step>
+      <step>Navigate through dashboard pages 1–8.</step>
+      <step>Use slicers to explore performance by health board, demographics, dates, and specialties.</step>
+    </steps>
+  </section>
+</readme>
