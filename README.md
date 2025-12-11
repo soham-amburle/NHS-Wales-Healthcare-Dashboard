@@ -61,6 +61,9 @@ NHS-Wales-Healthcare-Dashboard/
 
 ---
 
+
+---
+
 ## Key Features
 
 - **Interactive Slicers:** Filter by date, age, gender, local health board, and specialty.  
@@ -101,6 +104,3 @@ NHS-Wales-Healthcare-Dashboard/
    - **Population Health**  
    - **Finance & Workforce**  
    - **Patient Drill-through**
-
-
-
