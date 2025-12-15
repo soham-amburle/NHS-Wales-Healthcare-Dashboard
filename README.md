@@ -76,4 +76,44 @@ NHS-Wales-Healthcare-Dashboard/
 │
 └── README.md                          # Project overview, instructions, and repo info
 ```
-test
+## Key Features
+
+- **Interactive Slicers:** Filter by date, age, gender, local health board, specialty, admission type.  
+- **KPIs & Cards:** Quick insights into attendances, waiting times, readmissions, mortality, bed occupancy, costs, agency staffing.  
+- **Line Charts & Trends:** Track monthly/yearly trends for A&E, ambulance response, infections, bed occupancy, and costs.  
+- **Histograms & Distributions:** Analyze A&E wait times, waiting time bands, comorbidity counts.  
+- **Scatter Plots:** Patient LOS by event for individual trajectory analysis.  
+- **Tooltips & Drill-through:** Hover for patient demographics, clinical outcomes, and care metrics.  
+- **Conditional Formatting:** Highlights KPIs against operational targets.  
+
+---
+
+## Dataset
+
+- **File:** `data/nhs_wales_synthetic.csv`  
+- **Records:** 50,000 synthetic patient encounters  
+- **Columns Include:**  
+  - Patient demographics (age, sex, WIMD quintile)  
+  - Admission details (type, specialty, event/referral dates, length of stay)  
+  - Clinical outcomes (mortality, readmissions, infections, comorbidities)  
+  - Operational metrics (A&E wait minutes, ambulance callouts/response, bed occupancy)  
+  - Finance & staffing (cost of care, agency staff usage)  
+
+> **Note:** This dataset is synthetic and does not contain real patient data. It is intended for **dashboard testing and analysis practice**.
+
+---
+
+## How to Use
+
+1. Open `NHS_Wales_Dashboard.pbix` in **Power BI Desktop**.  
+2. Load the synthetic dataset from `data/nhs_wales_synthetic.csv`.  
+3. Use slicers to filter by date, demographics, admission type, or health board.  
+4. Explore KPIs, charts, and interactive visuals on each dashboard page:  
+   - Executive Summary  
+   - A&E Performance  
+   - Outpatient & RTT  
+   - Inpatient Flow  
+   - Quality & Safety  
+   - Population Health  
+   - Finance & Workforce  
+   - Patient Drill-through
