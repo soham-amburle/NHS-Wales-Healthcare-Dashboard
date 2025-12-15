@@ -1,15 +1,16 @@
 # NHS Wales Healthcare Dashboard
-17 November, 2025 - Present
+**Project Duration:** 17 November 2025 – Present
 
 ## Project Overview
-This project contains interactive **Power BI dashboards** analyzing NHS Wales healthcare data. The dashboards focus on key performance areas including:
+This project contains interactive **Power BI dashboards** analyzing healthcare data across **NHS Wales**. The dashboards focus on key performance areas including:
 
-- **A&E Performance** (attendances, wait times, 4-hour compliance, ambulance response)  
-- **Outpatient & RTT** (waiting times, elective care, referral-to-treatment targets)  
-- **Inpatient Flow** (bed occupancy, length of stay, discharge trends)  
-- **Quality & Safety** (infection rates, readmissions, mortality)  
-- **Population Health** (demographics, comorbidities, vaccination uptake)  
-- **Finance & Workforce** (costs, agency staffing)  
+- **A&E Performance** – attendances, wait times, 4-hour compliance, ambulance response.  
+- **Outpatient & RTT** – elective care, referral-to-treatment pathway, waiting times, backlog.  
+- **Inpatient Flow** – bed occupancy, length of stay (LOS), discharge trends, waiting times.  
+- **Quality & Safety** – infection rates, mortality, 30-day readmissions, specialty-level safety.  
+- **Population Health** – demographics, comorbidities, vaccination uptake, deprivation.  
+- **Finance & Workforce** – costs, agency staffing, operational resource utilization.  
+- **Patient Drill-Through** – individual patient journey, events, outcomes, trajectory over time.
 
 The dashboards use a **synthetic dataset** of 50,000 patient records based on NHS Wales service data, suitable for testing and analysis purposes.
 
@@ -17,16 +18,16 @@ The dashboards use a **synthetic dataset** of 50,000 patient records based on NH
 
 ## Dashboard Pages
 
-| Page | Name                  | Purpose                          |
-|------|----------------------|---------------------------------|
-| 1    | Executive Summary     | High-level KPIs                 |
-| 2    | A&E Performance       | Emergency care metrics          |
-| 3    | Outpatient & RTT      | Waiting lists and elective flow|
-| 4    | Inpatient Flow        | Beds, LOS, discharges           |
-| 5    | Quality & Safety      | Infection, mortality, readmissions |
-| 6    | Population Health     | Patient characteristics         |
-| 7    | Finance & Workforce   | Cost and staffing               |
-| 8    | Patient Drill-through | Individual patient journey      |
+| Dashboard | Name                  | Purpose & Details | Date |
+|-----------|----------------------|-----------------|------|
+| 1         | Executive Summary     | High-level KPIs across services for quick operational and strategic overview. | N/A |
+| 2         | A&E Performance       | Emergency care metrics: attendances, average wait times, % seen within 4 hours, ambulance callouts, conversion rates. | 17–18 Nov 2025 |
+| 3         | Outpatients & RTT     | Elective pathway analysis: total referrals, patients waiting >26/52 weeks, average waiting days, RTT funnel, specialty-level backlog. | 19 Nov 2025 |
+| 4         | Inpatient Flow        | Hospital capacity and patient flow: bed occupancy, average & median LOS, discharges, waiting time bands, specialty-specific throughput. | 20–24 Nov 2025 |
+| 5         | Quality & Safety      | Clinical outcomes: MRSA/C. Diff/overall infection rates, mortality, readmissions within 30 days, infections by specialty. | 25–28 Nov 2025 |
+| 6         | Population Health     | Demographics & risk factors: age distribution, sex, comorbidities, smoking status, WIMD quintiles, flu vaccination uptake. | 29 Nov – 04 Dec 2025 |
+| 7         | Finance & Workforce   | Operational and financial metrics: total cost of care, average cost per encounter, agency staff usage, cost per bed day, bed occupancy, length of stay. | 09 Dec 2025 |
+| 8         | Patient Drill-Through | Patient-level journey: chronological care events, outcomes, length of stay scatter plot, KPI cards for risk and clinical context. | 12–15 Dec 2025 |
 
 ---
 
@@ -35,69 +36,44 @@ The dashboards use a **synthetic dataset** of 50,000 patient records based on NH
 ```text
 NHS-Wales-Healthcare-Dashboard/
 │
-├── data/                             # Synthetic datasets (CSV/Excel)
+├── data/                             # Synthetic dataset
 │   └── nhs_wales_synthetic.csv
 │
-├── Dashboard_1_Executive_Summary/       # Dashboard 1: Exec Summary
-│  
-├── Dashboard_2_AE_Performance/       # Dashboard 2: A&E Performance
-│  
-├── Dashboard_3_Outpatients_RTT/      # Dashboard 3: Outpatient & RTT
-│   
-├── Dashboard_4_Inpatient_Flow/       # Dashboard 4: Inpatient Flow
+├── Dashboard2/                        # Dashboard 2: A&E Performance
+│   ├── Dashboard2.png                  # Dashboard image
+│   ├── Dashboard2_Details.md           # Detailed documentation
+│   └── README.md                       # Dashboard-specific readme
 │
-├── Dashboard_5_Quality_Safety/       # Dashboard 5: Quality & Safety
+├── Dashboard3/                        # Dashboard 3: Outpatients & RTT
+│   ├── Dashboard3.png
+│   ├── Dashboard3_Details.md
+│   └── README.md
 │
-├── Dashboard_6_Population_Finance/  # Dashboard 6: Population Health & Finance
+├── Dashboard4/                        # Dashboard 4: Inpatient Flow
+│   ├── Dashboard4.png
+│   ├── Dashboard4_Details.md
+│   └── README.md
 │
-├── Dashboard_7_Finance_Workforce/    # Dashboard 7: Finance & Workforce
+├── Dashboard5/                        # Dashboard 5: Quality & Safety
+│   ├── Dashboard5.png
+│   ├── Dashboard5_Details.md
+│   └── README.md
 │
-├── Dashboard_8_Patient_Drillthrough/ # Dashboard 8: Patient Drill-through
+├── Dashboard6/                        # Dashboard 6: Population Health
+│   ├── Dashboard6.png
+│   ├── Dashboard6_Details.md
+│   └── README.md
 │
-├── dashboards/                       # Master Power BI files
-│   └── NHS_Wales_Dashboard.pbix
+├── Dashboard7/                        # Dashboard 7: Finance & Workforce
+│   ├── Dashboard7.png
+│   ├── Dashboard7_Details.md
+│   └── README.md
 │
-└── README.md                         # Project overview, instructions, and repo info
+├── Dashboard8/                        # Dashboard 8: Patient Drill-Through
+│   ├── Dashboard8.png
+│   ├── Dashboard8_Details.md
+│   └── README.md
+│
+└── README.md                          # Project overview, instructions, and repo info
 ```
----
-
-## Key Features
-
-- **Interactive Slicers:** Filter by date, age, gender, local health board, and specialty.  
-- **KPIs & Cards:** Total attendances, average wait times, % seen within 4 hours, ambulance callouts, conversion rates.  
-- **Line Charts & Trends:** Track A&E attendances and ambulance response times over time.  
-- **Histograms:** Distribution of A&E wait times to identify bottlenecks.  
-- **Tooltips & Drill-through:** Hover details for patient demographics and care metrics.  
-- **Conditional Formatting:** Visual cues for KPIs to highlight performance against targets.  
-
----
-
-## Dataset
-
-- **File:** `nhs_wales_synthetic.csv`  
-- **Records:** 50,000 synthetic patient encounters  
-- **Columns Include:**  
-  - Patient demographics (age, sex, WIMD quintile)  
-  - Admission details (type, specialty, event/referral dates, length of stay)  
-  - Clinical outcomes (mortality, readmissions, infections, comorbidities)  
-  - Operational metrics (A&E wait minutes, ambulance callouts/response, bed occupancy)  
-  - Finance & staffing (cost of care, agency staff usage)  
-
-> **Note:** This dataset is **synthetic** and does not contain real patient data. It is intended for **dashboard testing and analysis practice**.  
-
----
-
-## How to Use
-
-1. Open `NHS_Wales_Dashboard.pbix` in **Power BI Desktop**.  
-2. Load the synthetic dataset from `data/nhs_wales_synthetic.csv`.  
-3. Use slicers to filter by date, demographics, or health board.  
-4. Explore KPIs, charts, and interactive visuals on each dashboard page:  
-   - **Executive Summary**  
-   - **A&E Performance**  
-   - **Outpatient & RTT**  
-   - **Inpatient Flow**  
-   - **Quality & Safety**  
-   - **Population Health**  
-   - **Finance & Workforce**  
-   - **Patient Drill-through**
+test
