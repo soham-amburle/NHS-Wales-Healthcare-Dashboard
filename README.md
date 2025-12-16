@@ -1,5 +1,5 @@
 # NHS Wales Healthcare Dashboard
-**Project Duration:** 17 November 2025 – Present
+**Project Duration:** 17 November 2025 – 16 December 2025
 
 ## Project Overview
 This project contains interactive **Power BI dashboards** analyzing healthcare data across **NHS Wales**. The dashboards focus on key performance areas including:
