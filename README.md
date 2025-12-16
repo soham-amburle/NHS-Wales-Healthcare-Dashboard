@@ -4,6 +4,7 @@
 ## Project Overview
 This project contains interactive **Power BI dashboards** analyzing healthcare data across **NHS Wales**. The dashboards focus on key performance areas including:
 
+- **Executive Dashboard** – Overall decision making tool.  
 - **A&E Performance** – attendances, wait times, 4-hour compliance, ambulance response.  
 - **Outpatient & RTT** – elective care, referral-to-treatment pathway, waiting times, backlog.  
 - **Inpatient Flow** – bed occupancy, length of stay (LOS), discharge trends, waiting times.  
@@ -39,10 +40,15 @@ NHS-Wales-Healthcare-Dashboard/
 ├── data/                             # Synthetic dataset
 │   └── nhs_wales_synthetic.csv
 │
-├── Dashboard2/                        # Dashboard 2: A&E Performance
-│   ├── Dashboard2.png                  # Dashboard image
-│   ├── Dashboard2_Details.md           # Detailed documentation
+├── Dashboard1/                        # Dashboard 1: Executive Summary
+│   ├── Dashboard1.png                  # Dashboard image
+│   ├── Dashboard1_Details.md           # Detailed documentation
 │   └── README.md                       # Dashboard-specific readme
+│
+├── Dashboard2/                        # Dashboard 2: A&E Performance
+│   ├── Dashboard2.png
+│   ├── Dashboard2_Details.md
+│   └── README.md
 │
 ├── Dashboard3/                        # Dashboard 3: Outpatients & RTT
 │   ├── Dashboard3.png
@@ -76,6 +82,7 @@ NHS-Wales-Healthcare-Dashboard/
 │
 └── README.md                          # Project overview, instructions, and repo info
 ```
+
 ## Key Features
 
 - **Interactive Slicers:** Filter by date, age, gender, local health board, specialty, admission type.  
