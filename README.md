@@ -2,7 +2,7 @@
 **Project Duration:** 17 November 2025 – 16 December 2025
 
 ## Project Overview
-This project contains interactive **Power BI dashboards** analyzing healthcare data across **NHS Wales**. The dashboards focus on key performance areas including:
+This project contains interactive **Power BI dashboards** analyzing healthcare data across **NHS Wales**. The dashboards focus on key performance areas, including:
 
 - **Executive Dashboard** – Overall decision making tool.  
 - **A&E Performance** – attendances, wait times, 4-hour compliance, ambulance response.  
@@ -13,7 +13,7 @@ This project contains interactive **Power BI dashboards** analyzing healthcare d
 - **Finance & Workforce** – costs, agency staffing, operational resource utilization.  
 - **Patient Drill-Through** – individual patient journey, events, outcomes, trajectory over time.
 
-The dashboards use a **synthetic dataset** of 50,000 patient records based on NHS Wales service data, suitable for testing and analysis purpose.
+The dashboards use a **synthetic dataset** of 50,000 patient records based on NHS Wales service data, suitable for testing and analysis purposes.
 
 ---
 
